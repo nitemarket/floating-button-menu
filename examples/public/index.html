@@ -21,13 +21,13 @@
       </button>
       <div class="mdl-fab-expandable--children">
         <div class="mdl-fab-expandable--child">
-          <button class="yp-add-place mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
             <i class="material-icons">add</i>
           </button>
           <div class="mdl-fab-expandable--child-label"><label>Create</label></div>
         </div>
         <div class="mdl-fab-expandable--child">
-          <button class="yp-search-nearby mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
             <i class="material-icons">search</i>
           </button>
           <div class="mdl-fab-expandable--child-label"><label>Search</label></div>
@@ -76,10 +76,10 @@
     <script src="scripts/mdl-expandablefab.js"></script>
     <script>
     $(document).ready(() => {
-      demo.MaterialUtils.activateExpandableFAB();
+      nitemarket.MaterialUtils.activateExpandableFAB();
 
       $('#showSnackbarBtn').on('click', () => {
-        demo.MaterialUtils.showToastMessage("Warning! This is awesome.", "error");
+        nitemarket.MaterialUtils.showToastMessage("Warning! This is awesome.", "error");
       });
     });
     </script>

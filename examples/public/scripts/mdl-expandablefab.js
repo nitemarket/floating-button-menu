@@ -1,8 +1,8 @@
 'use strict';
 
-window.demo = window.demo || {};
+window.nitemarket = window.nitemarket || {};
 
-demo.MaterialUtils = class {
+nitemarket.MaterialUtils = class {
   static showToastMessage(message, type = 'info', timeout = 2750) {
     if(!$('#toastMessage').hasClass('mdl-snackbar--active')) {
       const toastSnackbar = $('#toastMessage')[0];
@@ -29,9 +29,9 @@ demo.MaterialUtils = class {
   }
 
   static activateExpandableFAB() {
-    const mdlButtonElements = $('.mdl-button--fab-expandable button');
+    const mdlButtonElements = $('.mdl-button--fab-expandable');
     mdlButtonElements.on('click', function() {
-      $(this).closest('.mdl-button--fab-expandable').toggleClass('is-active');
+      $(this).toggleClass('is-active');
     });
   }
 }
