@@ -32,9 +32,15 @@
   },
   "homepage": "https://github.com/nitemarket/mdl-expandable-floating-button#readme",
   "devDependencies": {
+    "babili": "^0.1.4",
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
     "morgan": "^1.8.2"
   }
 }

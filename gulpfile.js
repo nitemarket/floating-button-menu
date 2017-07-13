@@ -1,15 +1,14 @@
 var gulp = require('gulp');
 var minifyCss = require("gulp-minify-css");
-var uglify = require('gulp-uglify');
+var babel = require('gulp-babel')
 var rename = require('gulp-rename');
 
 var DEST = 'dist';
 var FILENAME = 'mdl-expandablefab';
 
 gulp.task('minify-js', function() {
-  gulp.src('examples/public/scripts/' + FILENAME + '.js')
-    .pipe(gulp.dest(DEST))
-    .pipe(uglify())
+  return gulp.src('examples/public/scripts/' + FILENAME + '.js')
+    .pipe(babel({presets: ['babili']}))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(DEST))
 });
