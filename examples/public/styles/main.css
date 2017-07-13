@@ -1,0 +1,27 @@
+.mdl-fab-top-left {
+	position: fixed;
+	top: 150px;
+	left: 24px;
+	transition: bottom .25s cubic-bezier(0,0,.2,1);
+}
+
+.mdl-fab-top-right {
+	position: fixed;
+  top: 150px;
+	right: 24px;
+	transition: bottom .25s cubic-bezier(0,0,.2,1);
+}
+
+.mdl-fab-bottom-left {
+	position: fixed;
+  bottom: 24px;
+	left: 24px;
+	transition: bottom .25s cubic-bezier(0,0,.2,1);
+}
+
+.mdl-fab-bottom-right {
+	position: fixed;
+  bottom: 24px;
+	right: 24px;
+	transition: bottom .25s cubic-bezier(0,0,.2,1);
+}

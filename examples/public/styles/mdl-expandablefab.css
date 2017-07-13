@@ -1,0 +1,58 @@
+.mdl-button--fab-expandable, .mdl-button--fab-expandable * {
+	z-index: 9999;
+}
+
+.mdl-button--fab-expandable.is-active > .mdl-fab-expandable--children {
+	display: block !important;
+}
+
+.mdl-button--fab-expandable.bottom > .mdl-fab-expandable--children {
+	display: none;
+	position: absolute;
+  bottom: 56px;
+  left: 8px;
+}
+
+.mdl-button--fab-expandable.top > .mdl-fab-expandable--children {
+	display: none;
+	position: absolute;
+  top: 56px;
+  left: 8px;
+}
+
+.mdl-button--fab-expandable.bottom .mdl-fab-expandable--child {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.mdl-button--fab-expandable.top .mdl-fab-expandable--child {
+	position: relative;
+	margin-top: 16px;
+}
+
+.mdl-fab-expandable--children .mdl-fab-expandable--child-label {
+	min-width: 200px;
+}
+
+.mdl-fab-expandable--child-label > * {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1;
+	background-color: #fff;
+	padding: 8px;
+	border-radius: 8px;
+}
+
+.mdl-button--fab-expandable.left .mdl-fab-expandable--child-label {
+	position: absolute;
+  left: 48px;
+	top: 10px;
+	text-align: left;
+}
+
+.mdl-button--fab-expandable.right .mdl-fab-expandable--child-label {
+	position: absolute;
+	right: 48px;
+	top: 10px;
+	text-align: right;
+}
